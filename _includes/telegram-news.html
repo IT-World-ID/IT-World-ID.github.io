@@ -1,0 +1,18 @@
+<!-- Jquery Untuk Kebutuhan -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-rss/3.3.0/jquery.rss.min.js"></script>
+<script>
+jQuery(function ($) {
+  $("#rss-feeds").rss("https://rss.app/feeds/iHHYRZwqn3g9hfdj.xml", {
+    limit: 10, // how many entries to get
+    ssl: true, // use SSL?
+    // see more options here: https://github.com/sdepold/jquery-rss#options
+    layoutTemplate: "<h2>Maling IT</h2><div>{entries}</div>",
+    entryTemplate:
+      '<li><a href="{url}"> {title}</a><br/>{teaserImage}{shortBodyPlain}</li>'
+    // see more about templating here: https://github.com/sdepold/jquery-rss#templating
+  });
+});
+
+</script>
+<div id="rss-feeds"></div>

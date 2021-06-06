@@ -1,0 +1,10 @@
+<html>
+    {% include head.html %}
+    <body class="with-custom-webkit-scrollbars with-custom-css-scrollbars dark-mode" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true">
+        <div id="#" class="page-wrapper with-navbar with-sidebar with-transitions" data-sidebar-type="overlayed-all">
+            {% include navbar.html %}
+            {{ content }}
+        </div>
+        {% include script.html %}
+    </body>
+</html>

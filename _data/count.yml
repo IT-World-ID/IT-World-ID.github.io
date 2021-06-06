@@ -1,0 +1,15 @@
+-
+  nama: Member
+  total: 3500+
+  desk: member yang sudah bergabung dengan komunitas
+  warna: bg-primary
+-
+  nama: Online
+  total: 1200+
+  desk: Member Online setiap harinya
+  warna: bg-secondary
+-
+  nama: Projek
+  total: 200
+  desk: Sudah banyak projek yang kami selesaikan
+  warna: bg-success

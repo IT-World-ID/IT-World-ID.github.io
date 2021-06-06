@@ -1,0 +1,67 @@
+---
+layout: default
+---
+        <!-- Content wrapper start -->
+        <div class="content-wrapper">
+            <div class="content-wrapper">
+                <!-- Container-fluid -->
+                <div  class="container-fluid">
+                  <!-- First comes a content container with the main title -->
+                  <div class="row container-block shadow bg bg-dark-dm bg-light-lm">
+                    <div class="col-2"></div>
+                  <div class="col-lg-8 mt-100 mb-20 mr-15 ml-15">
+                    <div class="content card shadow-lg  hero">
+                        <!-- Notice link start -->
+                        <!-- <a href="#" class="notice-link px-15 pl-10 py-5 text-extra-letter-spacing d-flex align-items-center text-monospace font-size-12 mb-20" target="_blank" rel="noopener">
+                            <span class="badge badge-pill mr-10">
+                                <strong>News</strong>
+                            </span>
+                            {{ page.note }}
+                            <span class="text-primary ml-auto">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </a> -->
+                        <!-- Notice link end -->
+
+                        <!-- Header, content, and CTAs start -->
+                        <h1 class="hero-header">
+                            <strong class="font-weight-bolder">{{ site.title }}</strong>
+                        </h1>
+                        <p class="hero-content">
+                          {{ site.about }}
+                        </p>
+                        <div class="mt-20">
+                            <a href="/tentang" class="btn btn-primary is-cta" role="button">
+                                Tentang Kami
+                            </a>
+                        </div>
+                        <!-- Header, content, and CTAs end -->
+                    </div>
+                </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <!-- Post Dimulai -->
+                    {% for post in site.posts %}
+                    <div class="col-auto col-md-6 col-lg-4">
+                      <div class=" m-0 mw-full"> <!--  m-0 = width: 40rem (400px), mw-full = max-width: 100% -->
+                    <a href="{{ post.url }}">
+                        
+                        <div class="card shadow-lg rounded-10 p-0">
+                          
+                          <div class="content">
+                            <h1 class="content-title">
+                             {{post.title}}
+                            </h1>
+                          </div>
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+                    {% endfor %}
+                    <!-- Post Selesai -->
+                  </div>
+                </div>
+                </div>
+              </div>
+        </div>
