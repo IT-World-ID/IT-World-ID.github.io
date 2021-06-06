@@ -44,18 +44,25 @@ layout: default
                     <!-- Post Dimulai -->
                     {% for post in site.posts %}
                     <div class="col-auto col-md-6 col-lg-4">
-                      <div class=" m-0 mw-full"> <!--  m-0 = width: 40rem (400px), mw-full = max-width: 100% -->
-                    <a href="{{ post.url }}">
-                        
-                        <div class="card shadow-lg rounded-10 p-0">
-                          
-                          <div class="content">
-                            <h1 class="content-title">
-                             {{post.title}}
-                            </h1>
+                      <div class="w-full mw-full"> <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                        <div class="card p-0"> <!-- p-0 = padding: 0 -->
+                          <!-- Card header -->
+                          <div class="px-card py-10 border-bottom"> <!-- py-10 = padding-top: 1rem (10px) and padding-bottom: 1rem (10px), border-bottom: adds a border on the bottom -->
+                            <h2 class="card-title font-size-18 m-0"> <!-- font-size-18 = font-size: 1.8rem (18px), m-0 = margin: 0 -->
+                              {{post.title}}
+                            </h2>
+                          </div>
+                          <!-- Content -->
+                          <div class="content text-reset font-size-14 text-break">
+                            {{post.excerpt}}
+                          </div>
+                          <!-- Card footer -->
+                          <div class="px-card py-10 bg-light-lm bg-very-dark-dm rounded-bottom"> <!-- py-10 = padding-top: 1rem (10px) and padding-bottom: 1rem (10px), bg-light-lm = background-color: var(--gray-color-light) only in light mode, bg-very-dark-dm = background-color: var(--dark-color-dark) only in dark mode, rounded-bottom = rounded corners on the bottom -->
+                            <p class="font-size-12 m-0">
+                            <a href="{{ post.url }}">{{post.author}}</a>
+                            </p>
                           </div>
                         </div>
-                        </a>
                       </div>
                     </div>
                     {% endfor %}

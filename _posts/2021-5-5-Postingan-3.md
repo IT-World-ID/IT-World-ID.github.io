@@ -1,5 +1,5 @@
 ---
-thumb: https://dpsvdv74uwwos.cloudfront.net/statics/img/ogimage/cross-site-scripting-xss.jpg
 title: Postingan 3
 ---
-# Hi Post 3
+
+We will notify you whenever we make a new post. No spam, no marketing, we promise. 
